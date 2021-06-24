@@ -1,0 +1,21 @@
+﻿<Window x:Class="MyBookshelf.InWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyBookshelf"
+        mc:Ignorable="d"
+        Title="LitBook" Height="711.209" FontSize="20"  Width="684.8" Background="#FF009FDA" Icon="LogoIcon.png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Canvas>
+        <Label Content="Добро пожаловать!" Canvas.Left="124" FontSize="48" HorizontalAlignment="Center" Canvas.Top="202" FontFamily="Arial" Foreground="#FF0041FF" />
+        <Label Content="Авторизуйтесь или выберите гостевой режим" FontSize="24" HorizontalAlignment="Center" Width="527" Canvas.Top="282" Canvas.Left="66" FontFamily="Arial" />
+        <TextBox Background="#FFFECB00" x:Name="tbLogin" Height="35" Width="200" Canvas.Top="437" HorizontalAlignment="Center" TextAlignment="Center" FontSize="24" FontFamily="Arial" Canvas.Left="242"/>
+        <TextBox Background="#FFFECB00" x:Name="tbPassword" Height="35" TextAlignment="Center" Width="200" Canvas.Left="242" Canvas.Top="356" HorizontalAlignment="Center" FontFamily="Arial" FontSize="24"/>
+        <Label Content="Логин" Canvas.Left="304" FontSize="24" Canvas.Top="324" HorizontalAlignment="Center" FontFamily="Arial" />
+        <Label Content="Пароль" Canvas.Left="304" FontSize="24" Canvas.Top="396" HorizontalAlignment="Center" />
+        <Button Content="Войти" Height="55" Width="169" x:Name="btnEntry" Canvas.Left="255" Canvas.Top="491" Click="btnEntry_Click" Background="#FFD10074" FontFamily="Arial" Foreground="White" FontSize="48"/>
+        <Button Background="#FFD10074" Content="Гостевой режим" Height="65" Width="381" x:Name="btnGuest" Canvas.Left="151" Canvas.Top="551" Foreground="White" Click="btnGuest_Click" FontFamily="Arial" FontSize="48"/>
+        <Image Height="214" Width="214" Source="Logo.png" Canvas.Left="228" HorizontalAlignment="Center" Canvas.Top="-17"/>
+        <Label Content="LitBook" Canvas.Left="242" FontSize="48" HorizontalAlignment="Center" Canvas.Top="148" FontFamily="Arial" Foreground="#FF0041FF" FontWeight="Bold" />
+    </Canvas>
+</Window>
